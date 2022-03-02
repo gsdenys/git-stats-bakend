@@ -1,6 +1,8 @@
 import requests
+import os
 
-_access_token = "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"
+
+_access_token = os.getenv("GITHUB_TOKEN")
 _headers = {'Authorization': "Token " + _access_token}
 
 
